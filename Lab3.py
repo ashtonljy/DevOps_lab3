@@ -11,9 +11,19 @@ def bubble_sort(arr, sorting_order):
 
     # Get number of elements in the list
     n = len(arr_result)
+    if n >= 10:
+        return 1
+    if n==0:
+        return 0
+    
+    for item in arr_result:
+        if (isinstance(item, int)==False):
+            return 2
 
     if n < 10:
         # Traverse through all array elements
+        
+
         for i in range(n - 1):
             # range(n) also work but outer loop will
             # repeat one time more than needed.

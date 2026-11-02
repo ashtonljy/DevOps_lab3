@@ -28,3 +28,18 @@ def test_bubble_sort_invalid():
     result = Lab3.bubble_sort(input_arr, 3)
 
     assert (result == [])
+
+
+def test_bubble_sort_len():
+    input_arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,64, 34, 25, 12, 22, 11, 90]
+    expected = 1
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING)
+    assert(result == expected)
+
+def test_bubble_sort_empty():
+    input_arr = []
+    expected = 0
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_DESCENDING)
+    assert(result == expected)
+
+
