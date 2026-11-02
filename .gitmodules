@@ -1,0 +1,3 @@
+[submodule "DevOps_lab2"]
+	path = DevOps_lab2
+	url = https://github.com/ashtonljy/DevOps_lab2.git
